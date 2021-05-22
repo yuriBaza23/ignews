@@ -50,3 +50,11 @@ O Ignews utiliza Webhooks para ouvir atualizações no stripe devido a alguma al
 > Ao adicionar as palavras **NEXT_PUBLIC_** antes de uma variável, a torna pública. __Tome cuidado ao adicionar essas palavras__. O Stripe CLI é necessério ao desenvolver a aplicação. Para informações sobre o modo produção, acesse: [Stripe Webhooks Production](https://dashboard.stripe.com/test/webhooks).  
   
 #### Github
+Para configurar o Github, é necessário acessar a opção _Developer settings_ nas settings do Github e seguir os passos abaixo:
+- [ ] Acesse o OAuth Apps
+- [ ] Crie um novo OAuth App com o valor `http://localhost:3000/api/auth/callback` no campo _Authorization callback URL_
+- [ ] Crie a variável `GITHUB_CLIENT_ID` no seu .env e coloque como valor seu *Client ID*
+- [ ] Cria a variável `GITHUB_SECRET_ID` no seu .env e coloque como valor seu *Client Secrets*
+- [ ] No campo _Homepage URL_ coloque como valor `http://localhost:3000`  
+  
+#### FaunaDB
