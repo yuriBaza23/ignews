@@ -58,3 +58,15 @@ Para configurar o Github, é necessário acessar a opção _Developer settings_ 
 - [ ] No campo _Homepage URL_ coloque como valor `http://localhost:3000`  
   
 #### FaunaDB
+Para configurar o Fauna, é necessário que crie sua conta no site [Fauna](https://fauna.com) e que siga os passos abaixo:
+- [ ] Criar um database chamado _ignews_
+- [ ] Criar a collection _subscriptions_ e a collection _users_
+- [ ] Criar o index *user_by_email* com o valor `data.email`, sendo unico, no campo _terms_ e _source collection_ sendo `users`
+- [ ] Criar o index *user_by_stripe_customer_id* com o valor `data.stripe_customer_id` no campo _terms_ e _source collection_ sendo `users`
+- [ ] Criar o index *subscription_by_id* com o valor `data.id` no campo _terms_ e _source collection_ sendo `subscriptions`
+- [ ] Criar o index *subscription_by_status* com o valor `data.status`, no campo _terms_ e _source collection_ sendo `subscriptions`
+- [ ] Criar o index *subscription_by_user_ref* com o valor `data.userId` no campo _terms_ e _source collection_ sendo `subscriptions`
+- [ ] Na sessão Security crie uma nova chave com o nome `ignews-next-app` e coloque a *chave secreta* na variável `FAUNADB_KEY` do seu .env  
+  
+> Cuidado! Só é possível visualizar uma vez a sua chave secreta.  
+  
