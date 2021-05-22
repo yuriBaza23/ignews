@@ -70,3 +70,14 @@ Para configurar o Fauna, é necessário que crie sua conta no site [Fauna](https
   
 > Cuidado! Só é possível visualizar uma vez a sua chave secreta.  
   
+#### Prismic CMS
+Para configurar o Primic, acesse o site [Prismic CMS](https://prismic.io), crie uma conta e siga os passos abaixo:
+- [ ] Crie um repositório para a aplicação
+- [ ] Acesse a sessão _Custom Types_ e crie um novo tipo no estilo _Repeatable Type_ e de o nome de `post`
+- [ ] Na criação do tipo, coloque os campos: UID tendo um field name como UID
+- [ ] Na criação do tipo, coloque os campos: Title Field tendo um field name como title e configuração h1
+- [ ] Na criação do tipo, coloque os campos: Rich Text tendo um field name como content todas as configurações possíveis
+- [ ] Salve o tipo e adicione alguns posts
+- [ ] Na sessão settings entre em _API & Security_ e escolha `Private API – Require an access token for any request` no campo API access em _Repository security_ e clique em _Change the API visibility_
+- [ ] Adicione um access token, crie no seu .env a variável `PRISMIC_ACCESS_TOKEN` e coloque como valor seu _Permanent access token_
+- [ ] Crie a variável `PRISMIC_ENTRYPOINT_URL` e coloque como valor o link disponivel em _API Endpoint_
