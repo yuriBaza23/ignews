@@ -81,3 +81,4 @@ Para configurar o Primic, acesse o site [Prismic CMS](https://prismic.io), crie 
 - [ ] Na sessão settings entre em _API & Security_ e escolha `Private API – Require an access token for any request` no campo API access em _Repository security_ e clique em _Change the API visibility_
 - [ ] Adicione um access token, crie no seu .env a variável `PRISMIC_ACCESS_TOKEN` e coloque como valor seu _Permanent access token_
 - [ ] Crie a variável `PRISMIC_ENTRYPOINT_URL` e coloque como valor o link disponivel em _API Endpoint_
+----------------
