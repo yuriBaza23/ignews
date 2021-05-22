@@ -82,3 +82,14 @@ Para configurar o Primic, acesse o site [Prismic CMS](https://prismic.io), crie 
 - [ ] Adicione um access token, crie no seu .env a variável `PRISMIC_ACCESS_TOKEN` e coloque como valor seu _Permanent access token_
 - [ ] Crie a variável `PRISMIC_ENTRYPOINT_URL` e coloque como valor o link disponivel em _API Endpoint_
 ----------------
+> Lembre-se de rodar o Stripe CLI toda a vez que for iniciar a aplicação
+  
+### Iniciando a aplicação
+Instale as dependências utilizando
+```javascript
+yarn
+```
+e rode o Ignews 
+```javascript
+yarn dev
+```
