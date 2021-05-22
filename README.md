@@ -20,5 +20,5 @@ Foram usados nesse site diversos conceitos como SSR (Server-side Rendering), JAM
 
 ### Single-page Application
 O Single-page Application (SPA) é um modelo bastante usado e, de certa forma, o que é mais comum encontrarmos. O Browser __lado do cliente__ faz uma comunicação com o código React __bundle.js__ que se comunica, por sua vez, com o Back-end __servidor__ mandando dados (Nesse exemplo, mandam dados relacionados ao usuário) e retornando dados em formato JSON. Após o término dessa comunicação é renderizado o código HTML.
-<br/>
+  
 ![image spainfo](./spa.png)
